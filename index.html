@@ -2,6 +2,7 @@
 <head>
     <title>Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <link rel="icon" href="Images/Top-Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,24 +11,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <nav>
+        <a href="index.html"><img src="Images/Logo.jpg" height="70"></a>
+        <div class="navbar" id="navbar">
+            <i class="fa-solid fa-xmark" id="close" onclick="hide()"></i>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Menu</a></li>
+                <li><a href="#">Promo</a></li>
+                <li><a href="#">Order</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="menu" onclick="show()"></i>
+    </nav>
     <header>
-        <nav>
-            <a href="index.html"><img src="Images/Logo.jpg" height="70"></a>
-            <div class="navbar" id="navbar">
-                <i class="fa-solid fa-xmark" id="close" onclick="hide()"></i>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Menu</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">Order</a></li>
-                </ul>
+        <div class="header-container">
+            <div class="head-content">
+                <h1>Healthy Food<br>Restaurant</h1>
+                <p>Lorem ipsum dolor sit amet consectetur<br>adipisicing elit. Saepe?</p>
+                <a href="#">Visit More</a>
             </div>
-            <i class="fa-solid fa-bars" id="menu" onclick="show()"></i>
-        </nav>
-        <div class="head-content">
-            <h1>Healthy Food<br>Restaurant</h1>
-            <p>Lorem ipsum dolor sit amet consectetur<br>adipisicing elit. Saepe?</p>
-            <a href="#">Visit More</a>
         </div>
     </header>
 
@@ -172,7 +175,7 @@
 
 <script>
 
-    var navbar = document.getElementById("navbar");
+    let navbar = document.getElementById("navbar");
 
     function show(){
         navbar.style.right = "0px";
@@ -183,10 +186,6 @@
     }
 
 </script>
-
-
-
-
 
 </body>
 </html>
