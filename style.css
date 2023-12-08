@@ -143,7 +143,7 @@ header{
 
 @media(max-width: 400px){
     .header-container{
-        padding: 64% 8%
+        padding: 70% 8% 64%
     }
     .head-content h1{
         font-size: 40px;
