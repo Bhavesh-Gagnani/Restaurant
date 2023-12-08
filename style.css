@@ -163,7 +163,7 @@ header{
 
 @media(min-width: 400px){
     .header-container{
-        padding: 56% 6% 48%;
+        padding: 56% 6% 52%;
     }
     .head-content h1{
         font-size: 48px;
